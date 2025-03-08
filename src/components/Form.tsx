@@ -9,8 +9,7 @@ const CategoryForm: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(
     null
   );
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [selectedSubcategory, setSelectedSubcategory] =
+  const [, setSelectedSubcategory] =
     useState<Subcategory | null>(null);
   const [propertyChain, setPropertyChain] = useState<Property[]>([]);
   const [submittedData, setSubmittedData] = useState<Record<
